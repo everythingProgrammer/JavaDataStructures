@@ -28,6 +28,7 @@ public class HarryPotter {
 			}
 			count++;
 		}
+		System.out.println();
 		return count;
 	}
 	

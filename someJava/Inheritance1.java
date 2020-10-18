@@ -27,16 +27,16 @@ class Two extends One{
 	public void print() {
 		System.out.println("TWO");
 	}
-	public static void main(String args[]) {
-//		Two ab  = new One();
-		One ab = new Two(5);
-		One abc = new One(2);
-		One temp ;
-		temp = ab;
-		temp.print();
-		temp = abc ;
-		temp.print() ;
-	}
+//	public static void main(String args[]) {
+////		Two ab  = new One();
+//		One ab = new Two(5);
+//		One abc = new One(2);
+//		One temp ;
+//		temp = ab;
+//		temp.print();
+//		temp = abc ;
+//		temp.print() ;
+//	}
 }
 
 
@@ -45,10 +45,8 @@ public class Inheritance1 {
 	public static void main(String args[]) {
 		One ab = new Two(5);
 		One abc = new One(2);
-		Two temp ;
-		temp = (Two) ab;
-		temp.print();
-//		temp = abc ;
-		temp.print() ; 
+		
+		ab.print();
+		abc.print();
 	}
 }

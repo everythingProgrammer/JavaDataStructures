@@ -1,0 +1,7 @@
+Some Success stories
+https://docs.google.com/document/d/1mwbC_Uzj7ndDnGw9knEWWyrZlzHNzEY_1dfayUuIhCM/edit
+
+
+System Design 
+
+https://github.com/donnemartin/system-design-primer

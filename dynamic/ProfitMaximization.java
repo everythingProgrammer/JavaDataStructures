@@ -2,6 +2,9 @@ package dynamic;
 
 public class ProfitMaximization {
 	
+	/*Dynamic Programming.
+	 * Top Down - memoization
+	 * Bottoms Up */
 	
 	public static int maxProfit(int nums[]) {
 		int dp[] = new int[nums.length];

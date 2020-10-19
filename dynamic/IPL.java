@@ -30,6 +30,10 @@ public class IPL {
 			dp[i] = nums[i] + Math.min(Math.min(dp[i-1], dp[i-2]), dp[i-3]);
 		}
 		
+//		for(int i = 0 ; i<size; i++) {
+//			System.out.print(dp[i] + " ");
+//		}
+//		System.out.println();
 		return tsum- Math.min(Math.min(dp[size-1], dp[size -2]),dp[size-3]) ;
 		
 	}

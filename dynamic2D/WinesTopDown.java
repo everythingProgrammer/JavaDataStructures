@@ -1,4 +1,4 @@
-package dynamic;
+package dynamic2D;
 
 public class WinesTopDown {
 	static int countprofit(int i , int j , int year, int wines[],int dp[][])

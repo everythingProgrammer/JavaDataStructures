@@ -1,4 +1,4 @@
-package dynamic;
+package dynamic2D;
 
 public class PallindromicString {
 	

@@ -2,6 +2,8 @@ package dynamic;
 
 public class PallindromicString {
 	
+	/*Double Dimensional Dp question*/
+	/*Haven't introduced dp in this yet*/
 	
 	public static boolean pallindromicString(String str, int l , int r) {
 		/*Recurrence relation function(r,l) = function(l+1, r-1) && s[l] == s[r]*/
@@ -21,7 +23,7 @@ public class PallindromicString {
 	
 	public static void main(String args[]) {
 		/*indexing has to be 0 based in this. so adjust accordingly.*/
-		System.out.println(pallindromicString("abbac", 1,4));
+		System.out.println(pallindromicString("abbac", 0,3));
 		
 		
 	}

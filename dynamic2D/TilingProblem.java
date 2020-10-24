@@ -28,21 +28,17 @@ public class TilingProblem {
 	
 	/*Bottom's up approach
 	 * from geeksforgeeks wasn't able to understand*/
-	public static int btupways(int n , int m ) {
-		
+	
+	
+	public static int bottomup(int n , int m) {
 		int dp[] = new int[n+1];
 		dp[0] = 0;
-		dp[1] = 1;
-		
-		for(int i = 2; i<= n ; i++) {
-			if(i > m) {
-				dp[i] = dp[i-1] +dp[i-m];
-				
+		dp[1] = 2;
+		for(int i = (n-3) ;i<= n ; i++) {
+			if( i >0 ) {	
 			}
 		}
 		return 0;
-		
-		
 	}
 	
 	

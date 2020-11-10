@@ -41,9 +41,25 @@ public class MinimumCostPath {
 		return dp[x-1][y-1];
 	}
 
-	/*Top Down*/
+	/*This is greedy approach ... 
+	 *Choose the first smallest number first 
+	 *and this doesn't even work ........ :)*/
 	public static int minCost2(int grid[][] , int x, int y ) {
+		int cost = 0;
 		
+		for(int i = x-1 ; i>0 ; ) {
+			for(int j = y-1; y> 0 ;) {
+				cost = cost + Math.min(grid[i-1][j], grid[i][j-1]);
+				if(grid[i-1][j]< grid[i][j-1]) {
+					i = i-1; 
+					
+				}else
+					j = j-1;
+			}
+		}
+		
+		
+		return 0;
 	}
 	
 	public static void main(String args[]) {

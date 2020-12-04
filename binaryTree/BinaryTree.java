@@ -167,13 +167,14 @@ public class BinaryTree {
 		 return this.isBST(this.root , Integer.MAX_VALUE , Integer.MIN_VALUE);
 	 }
 	 
+	 /*The problem with this solution arises when we just maximum value of integer is passed or minimum value of integer is passed*/
 	 private boolean isBST(Node node , int max , int min) {
 		 
 		 if(node == null) {
 			 return true;
 		 }
 		 
-		 if( node.data> max || node.data < min) {
+		 if( node.data>= max || node.data <= min) {
 			 return false;
 		 }
 		 else if( !this.isBST(node.left , node.data, min)) {

@@ -1,27 +1,18 @@
 package linkedList;
 
-public class LinkedList {
+
+
+public class DoublyLinkedList {
 	
-	
+
 	class Node{
 		int data; 
 		Node next; 
+		Node prev;
 	}
-	
 	public Node head; 
 	private Node tail; 
 	private int size; 
-	
-	/*Traversing LinkedList */
-	
-	public void display() {
-		Node temp = this.head;
-		while(temp != null) {
-			System.out.println(temp.data);
-			temp = temp.next;
-		}
-		System.out.println("Size of LinkedList = "+ this.size);
-	}
 	
 	
 	public void addLast(int a) {
@@ -29,11 +20,13 @@ public class LinkedList {
 		Node nn = new Node();
 		nn.data = a; 
 		nn.next = null; 
-		
+		nn.prev = null;
 		
 		//attach
 		if(this.size >=1) {
+			nn.prev = this.tail;
 			this.tail.next = nn	;
+			
 		}
 		
 		//Summary Object update 
@@ -50,6 +43,4 @@ public class LinkedList {
 		
 		
 	}
-	
-	
 }

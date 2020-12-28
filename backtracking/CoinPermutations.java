@@ -18,7 +18,6 @@ public class CoinPermutations {
 		
 		for(int i = 0 ; i< coins.length ; i++) {
 			if(curr+coins[i] <= amt) {
-				
 				printPermutations(curr+ coins[i] , amt , coins , ans+" "+coins[i]+",");
 			}
 		}

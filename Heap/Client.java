@@ -1,5 +1,5 @@
 package Heap;
-
+//import java.
 public class Client {
 	public static void main(String args[], Object newParam) {
 		Heap heap  = new Heap();
@@ -9,13 +9,6 @@ public class Client {
 		heap.display();
 		heap.add(30);
 		heap.display();
-		heap.add(40);
-		heap.display();
-		heap.add(5);
-		heap.display();
-		heap.add(3);
-		heap.display();
-		heap.add(70);
-		heap.display();
+		
 	}
 }

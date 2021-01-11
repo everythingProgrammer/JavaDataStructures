@@ -1,7 +1,7 @@
 package Heap;
 
 public class Client {
-	public static void main(String args[]) {
+	public static void main(String args[], Object newParam) {
 		Heap heap  = new Heap();
 		heap.add(10);
 		heap.display();

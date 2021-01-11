@@ -1,7 +1,23 @@
 package Heap;
 import java.util.*;
+
+/*This is zero based indexing */
+
 public class Heap {
 	ArrayList<Integer> data = new ArrayList<>();
+	int size;
+	public int top() {
+		
+		return data.get(0);
+	}
+	public int pop() {
+		return 0;
+	}
+	public boolean empty() {
+		
+		
+		return false;
+	}
 	
 	private void swap(int i , int j ) {
 		int ith = data.get(i);
@@ -19,7 +35,7 @@ public class Heap {
 			 swap(pi, ci);
 			 upheapify(pi);
 		}
-		
+
 	}
 	
 	public void add(int item) {

@@ -1,0 +1,12 @@
+
+
+					Heaps 
+	Implemented using ArrayList ... 
+		Max Heap / Min Heap
+		Insertion - O(log n ) 
+		Deletion - O(log n ) 
+		Getting Max - O(1) for Max Heap 
+		Getting Min - O(1) for Min heap 
+		
+					At codechef implemented using array ... 
+					implementing heap using arraylist ... 

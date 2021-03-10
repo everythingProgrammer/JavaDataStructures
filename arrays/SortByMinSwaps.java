@@ -1,16 +1,16 @@
 package arrays;
 import java.util.*;
 public class SortByMinSwaps {
-	
+	/*So the question says arr[1...N] so here I have modified minSwaps accordingly*/
 	static int minSwaps(int arr[]) {
 		int n = arr.length;
 		int ans = 0 ;
-		int temp[] = Arrays.copyOf(arr, n);
-		Arrays.sort(temp);
-		for(int i = 0 ;i<n; i++) {
-			if(arr[i] != temp[i]) {
+//		int temp[] = Arrays.copyOf(arr, n);
+//		Arrays.sort(temp);
+		for(int i = 1 ;i<=n; i++) {
+			if(arr[i-1] != i) {
 				ans++;
-				swap(arr, i , indexOf(temp[i], arr) );
+				swap(arr, i-1 , indexOf(i, arr) );
 			}
 		}
 		return ans;
@@ -29,7 +29,12 @@ public class SortByMinSwaps {
 	}
 	
 	public static void main(String args[]) {
-		int arr[] = {4,3,1,2};
+		Scanner sr = new Scanner(System.in);
+		int n = sr.nextInt();
+		int arr[]  = new int[n];
+		for(int i = 0; i< n ; i++) {
+			arr[i]  = sr.nextInt();
+		}
 		System.out.println(minSwaps(arr));
 	}
 	

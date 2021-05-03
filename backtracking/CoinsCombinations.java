@@ -27,7 +27,7 @@ public class CoinsCombinations {
 		
 		for(int i = prevcoin;  i<coins.length; i++) {
 			if(curr+coins[i]<= amt) {
-			printCombinations(amt , curr+coins[i] , coins, i , ans+" "+coins[i]+"," );
+				printCombinations(amt , curr+coins[i] , coins, i , ans+" "+coins[i]+"," );
 			}
 			
 		}

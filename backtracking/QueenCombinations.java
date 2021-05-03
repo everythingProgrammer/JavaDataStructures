@@ -26,7 +26,7 @@ public class QueenCombinations {
 	
 	public static void main(String args[]) {
 		
-		long beforeUsedMem=Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory();
+//		long beforeUsedMem=Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory();
 		System.out.println("Queen Combinations ");
 		boolean boxes[] = new boolean[4] ;
 		queenCombinations(boxes , 0 , 2, "" , -1);

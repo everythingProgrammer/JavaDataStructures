@@ -22,6 +22,6 @@ public class LastIndex {
 	
 	public static void main(String args[]) {
 		int arr[] = {6,8,1,1,8,3,4};
-		System.out.println(index(arr, 0 , 1));
+		System.out.println(index(arr, 0 , 12));
 	}
 }

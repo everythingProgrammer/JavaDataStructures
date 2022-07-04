@@ -35,6 +35,7 @@ public class MazePath {
 	
 	
 	public static void main(String args[]) {
+		
 		printPath(0,0,2,2,"");
 		System.out.println(countPath(0,0,2,2));
 	}

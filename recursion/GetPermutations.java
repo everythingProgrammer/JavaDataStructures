@@ -1,5 +1,5 @@
 /*Get permutations of string*/
-
+ 
 
 package recursion;
 import java.util.*;
@@ -16,13 +16,14 @@ public class GetPermutations {
 		ArrayList<String> rr = getPermutations(ros);
 		ArrayList<String> mr = new ArrayList<>();
 		
+		
 		for(String rrs: rr) {
 			for(int i = 0 ; i<=rrs.length(); i++) {
 				String val = rrs.substring(0,i) + ch + rrs.substring(i);
 				mr.add(val);
 			}
 		}
-		System.out.println(mr);
+//		System.out.println(mr);
 		return mr;
 	}
 	public static void main(String args[]) {
